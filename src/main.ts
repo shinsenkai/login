@@ -174,6 +174,7 @@ async function main() {
             commonArgs = commonArgs.concat("--federated-token", federatedToken);
         }
         else {
+            //
             console.log("Note: Azure/login action also supports OIDC login mechanism. Refer https://github.com/azure/login#configure-a-service-principal-with-a-federated-credential-to-use-oidc-based-authentication for more details.")
             commonArgs = commonArgs.concat(`--password=${servicePrincipalKey}`);
         }
